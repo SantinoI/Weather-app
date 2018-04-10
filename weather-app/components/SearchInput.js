@@ -19,8 +19,10 @@ export default class SearchInput extends React.Component{
             <TextInput
             placeholder="Insert City"
             underlineColorAndroid ="transparent"
+            placeholderTextColor="#ffff"
             onChangeText = {this.handleTextInput}
-            onSubmitEditing={() =>this.props.search(this.state.city)}>
+            onSubmitEditing={() =>this.props.search(this.state.city)}
+            style={{color:'white',textAlign:'center'}}>
             </TextInput>
         </View>
       )
